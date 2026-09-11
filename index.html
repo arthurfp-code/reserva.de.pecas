@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Reservas - Protótipo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-container">
+  <!-- Cabeçalho fixo no topo -->
+  <header>
+    <input type="text" class="search-bar" placeholder="Buscar peça...">
+    <span class="search-icon">&#128269;</span>
+  </header>
+
+  <main>
+    <!-- TELA 1: CATÁLOGO DE ITENS -->
+    <section id="catalogo" class="tela">
+      <div class="grid-itens">
+        <a href="#detalhes-1" class="card-item">item 1</a>
+        <a href="#detalhes-2" class="card-item">item 2</a>
+        <a href="#detalhes-3" class="card-item">item 3</a>
+        <a href="#detalhes-4" class="card-item">item 4</a>
+        <a href="#detalhes-5" class="card-item">item 5</a>
+        <a href="#detalhes-6" class="card-item">item 6</a>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FLUXO DO ITEM 1 -->
+    <!-- ========================================== -->
+    <section id="detalhes-1" class="tela sobreposicao">
+      <a href="#catalogo" class="btn-voltar">⬅ Voltar</a>
+      <div class="detalhes-container">
+        <div class="circulo-imagem"></div>
+        <div class="detalhes-texto"><h2>item 1</h2><p>Quantidade 10un</p></div>
+        <a href="#confirmacao-1" class="btn btn-reservar">Reservar</a>
+      </div>
+    </section>
+    <section id="confirmacao-1" class="tela sobreposicao">
+      <a href="#catalogo" class="btn-voltar">⬅ Voltar</a>
+      <div class="detalhes-container">
+        <div class="circulo-imagem"></div>
+        <div class="detalhes-texto"><h2>item 1</h2><p>Quantidade 10un</p></div>
+        <span class="btn btn-reservar btn-inativo">Reservar</span>
+      </div>
+      <div class="overlay">
+        <div class="modal">
+          <h3>Deseja Reservar?</h3>
+          <div class="botoes-modal">
+            <a href="#sucesso-1" class="btn btn-sim">SIM</a>
+            <a href="#detalhes-1" class="btn btn-nao">NÃO</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sucesso-1" class="tela sobreposicao">
+      <div class="sucesso-container">
+        <h2>Reserva Solicitada!</h2>
+        <p>O item 1 foi separado para você.</p><br><br>
+        <a href="#catalogo" class="btn btn-reservar">Voltar ao Catálogo</a>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FLUXO DO ITEM 2 -->
+    <!-- ========================================== -->
+    <section id="detalhes-2" class="tela sobreposicao">
+      <a href="#catalogo" class="btn-voltar">⬅ Voltar</a>
+      <div class="detalhes-container">
+        <div class="circulo-imagem"></div>
+        <div class="detalhes-texto"><h2>item 2</h2><p>Quantidade 5un</p></div>
+        <a href="#confirmacao-2" class="btn btn-reservar">Reservar</a>
+      </div>
+    </section>
+    <section id="confirmacao-2" class="tela sobreposicao">
+      <a href="#catalogo" class="btn-voltar">⬅ Voltar</a>
+      <div class="detalhes-container">
+        <div class="circulo-imagem"></div>
+        <div class="detalhes-texto"><h2>item 2</h2><p>Quantidade 5un</p></div>
+        <span class="btn btn-reservar btn-inativo">Reservar</span>
+      </div>
+      <div class="overlay">
+        <div class="modal">
+          <h3>Deseja Reservar?</h3>
+          <div class="botoes-modal">
+            <a href="#sucesso-2" class="btn btn-sim">SIM</a>
+            <a href="#detalhes-2" class="btn btn-nao">NÃO</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sucesso-2" class="tela sobreposicao">
+      <div class="sucesso-container">
+        <h2>Reserva Solicitada!</h2>
+        <p>O item 2 foi separado para você.</p><br><br>
+        <a href="#catalogo" class="btn btn-reservar">Voltar ao Catálogo</a>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FLUXO DO ITEM 3 -->
+    <!-- ========================================== -->
+    <section id="detalhes-3" class="tela sobreposicao">
+      <a href="#catalogo" class="btn-voltar">⬅ Voltar</a>
+      <div class="detalhes-container">
+        <div class="circulo-imagem"></div>
+        <div class="detalhes-texto"><h2>item 3</h2><p>Quantidade 25un</p></div>
+        <a href="#confirmacao-3" class="btn btn-reservar">Reservar</a>
+      </div>
+    </section>
+    <section id="confirmacao-3" class="tela sobreposicao">
+      <a href="#catalogo" class="btn-voltar">⬅ Voltar</a>
+      <div class="detalhes-container">
+        <div class="circulo-imagem"></div>
+        <div class="detalhes-texto"><h2>item 3</h2><p>Quantidade 25un</p></div>
+        <span class="btn btn-reservar btn-inativo">Reservar</span>
+      </div>
+      <div class="overlay">
+        <div class="modal">
+          <h3>Deseja Reservar?</h3>
+          <div class="botoes-modal">
+            <a href="#sucesso-3" class="btn btn-sim">SIM</a>
+            <a href="#detalhes-3" class="btn btn-nao">NÃO</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sucesso-3" class="tela sobreposicao">
+      <div class="sucesso-container">
+        <h2>Reserva Solicitada!</h2>
+        <p>O item 3 foi separado para você.</p><br><br>
+        <a href="#catalogo" class="btn btn-reservar">Voltar ao Catálogo</a>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FLUXO DO ITEM 4 -->
+    <!-- ========================================== -->
+    <section id="detalhes-4" class="tela sobreposicao">
+      <a href="#catalogo" class="btn-voltar">⬅ Voltar</a>
+      <div class="detalhes-container">
+        <div class="circulo-imagem"></div>
+        <div class="detalhes-texto"><h2>item 4</h2><p>Quantidade 73un</p></div>
+        <a href="#confirmacao-4" class="btn btn-reservar">Reservar</a>
+      </div>
+    </section>
+    <section id="confirmacao-4" class="tela sobreposicao">
+      <a href="#catalogo" class="btn-voltar">⬅ Voltar</a>
+      <div class="detalhes-container">
+        <div class="circulo-imagem"></div>
+        <div class="detalhes-texto"><h2>item 4</h2><p>Quantidade 73un</p></div>
+        <span class="btn btn-reservar btn-inativo">Reservar</span>
+      </div>
+      <div class="overlay">
+        <div class="modal">
+          <h3>Deseja Reservar?</h3>
+          <div class="botoes-modal">
+            <a href="#sucesso-4" class="btn btn-sim">SIM</a>
+            <a href="#detalhes-4" class="btn btn-nao">NÃO</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sucesso-4" class="tela sobreposicao">
+      <div class="sucesso-container">
+        <h2>Reserva Solicitada!</h2>
+        <p>O item 4 foi separado para você.</p><br><br>
+        <a href="#catalogo" class="btn btn-reservar">Voltar ao Catálogo</a>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FLUXO DO ITEM 5 -->
+    <!-- ========================================== -->
+    <section id="detalhes-5" class="tela sobreposicao">
+      <a href="#catalogo" class="btn-voltar">⬅ Voltar</a>
+      <div class="detalhes-container">
+        <div class="circulo-imagem"></div>
+        <div class="detalhes-texto"><h2>item 5</h2><p>Quantidade 12un</p></div>
+        <a href="#confirmacao-5" class="btn btn-reservar">Reservar</a>
+      </div>
+    </section>
+    <section id="confirmacao-5" class="tela sobreposicao">
+      <a href="#catalogo" class="btn-voltar">⬅ Voltar</a>
+      <div class="detalhes-container">
+        <div class="circulo-imagem"></div>
+        <div class="detalhes-texto"><h2>item 5</h2><p>Quantidade 12un</p></div>
+        <span class="btn btn-reservar btn-inativo">Reservar</span>
+      </div>
+      <div class="overlay">
+        <div class="modal">
+          <h3>Deseja Reservar?</h3>
+          <div class="botoes-modal">
+            <a href="#sucesso-5" class="btn btn-sim">SIM</a>
+            <a href="#detalhes-5" class="btn btn-nao">NÃO</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sucesso-5" class="tela sobreposicao">
+      <div class="sucesso-container">
+        <h2>Reserva Solicitada!</h2>
+        <p>O item 5 foi separado para você.</p><br><br>
+        <a href="#catalogo" class="btn btn-reservar">Voltar ao Catálogo</a>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FLUXO DO ITEM 6 -->
+    <!-- ========================================== -->
+    <section id="detalhes-6" class="tela sobreposicao">
+      <a href="#catalogo" class="btn-voltar">⬅ Voltar</a>
+      <div class="detalhes-container">
+        <div class="circulo-imagem"></div>
+        <div class="detalhes-texto"><h2>item 6</h2><p>Quantidade 40un</p></div>
+        <a href="#confirmacao-6" class="btn btn-reservar">Reservar</a>
+      </div>
+    </section>
+    <section id="confirmacao-6" class="tela sobreposicao">
+      <a href="#catalogo" class="btn-voltar">⬅ Voltar</a>
+      <div class="detalhes-container">
+        <div class="circulo-imagem"></div>
+        <div class="detalhes-texto"><h2>item 6</h2><p>Quantidade 40un</p></div>
+        <span class="btn btn-reservar btn-inativo">Reservar</span>
+      </div>
+      <div class="overlay">
+        <div class="modal">
+          <h3>Deseja Reservar?</h3>
+          <div class="botoes-modal">
+            <a href="#sucesso-6" class="btn btn-sim">SIM</a>
+            <a href="#detalhes-6" class="btn btn-nao">NÃO</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sucesso-6" class="tela sobreposicao">
+      <div class="sucesso-container">
+        <h2>Reserva Solicitada!</h2>
+        <p>O item 6 foi separado para você.</p><br><br>
+        <a href="#catalogo" class="btn btn-reservar">Voltar ao Catálogo</a>
+      </div>
+    </section>
+
+  </main>
+</div>
+</body>
+</html>
